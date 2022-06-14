@@ -65,7 +65,7 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  return input.map(arr => arr.map(e => { return !isNaN(e) ? e : []}).map(e => {return (e % 5 === 0) ?  e : []}).flat(1).map(e => (e) ? 2**e : []));
+  return input.map(arr => {return arr.filter(e => typeof e === 'number' && e % 5 === 0).map(e => {return Math.pow(2,e)})});
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5

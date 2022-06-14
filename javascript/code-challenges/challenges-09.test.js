@@ -156,7 +156,7 @@ Write a function named totalCharacters that takes in an array and returns the nu
 ------------------------------------------------------------------------------------------------ */
 
 const totalCharacters = (arr) => {
-  return console.log(arr.toString().replace(/([\s])/, ''));
+  return arr.toString().replace(/([\s])/, '');
 };
 
 /* ------------------------------------------------------------------------------------------------

@@ -267,9 +267,8 @@ Write a function named extractChildren that, given the array of characters from 
 ------------------------------------------------------------------------------------------------ */
 
 const extractChildren = (arr) => {
-  let childArr = [];
-  console.log(arr.map(o=>{o.children?o.children.map(c=>{(c.toLowerCase().includes('a'))?childArr.push(c):null}):null}));
-  return childArr;
+  let regexp = /^.*[a].*$/i;
+  return arr.filter(o => regexp.test(Object.values(o.name))).reduce((childrenArr, character, index) => { childrenArr.push(character.children ? character.children : null); return childrenArr}, []).filter(e => e).flat(1);
 };
 
 /* ------------------------------------------------------------------------------------------------
