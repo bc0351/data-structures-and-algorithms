@@ -193,7 +193,7 @@ const detectTicTacToeWin = (board) => {
   }
 };
 
-helpCheck = (board, r1, c1, r2, c2, r3, c3) => {
+const helpCheck = (board, r1, c1, r2, c2, r3, c3) => {
   if ((board[r1][c1] === board[r2][c2] && board[r2][c2] === board[r3][c3]) && (board[r1][c1] !== '' && board[r2][c2] !== '' && board[r3][c3] !== '')) {
     return true;
   } else {
