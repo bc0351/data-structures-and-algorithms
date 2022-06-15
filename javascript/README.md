@@ -2,6 +2,12 @@
 
 ## Language: `JavaScript`
 
+
+## **Table of Contents**
+
+* [Code Challenge: Class 01](./code-challenges/array-reverse/README.md)
+* [Code Challenge: Class 02](./code-challenges/array-insert-shift/README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.

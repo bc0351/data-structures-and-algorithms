@@ -7,7 +7,7 @@
 
 ## Whiteboard Process
 
-  - ![Whiteboard Process](../assets/img/code-401-challenge-01.png)
+  - ![Whiteboard Process](../../assets/img/code-401-challenge-01.png)
 
 ## Approach & Efficiency
 
