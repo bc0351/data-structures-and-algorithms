@@ -7,6 +7,7 @@
 
 * [Code Challenge: Class 01](./code-challenges/array-reverse/README.md)
 * [Code Challenge: Class 02](./code-challenges/array-insert-shift/README.md)
+* [Code Challenge: Class 03](./code-challenges/array-binary-search/README.md)
 
 ### Folder and Challenge Setup
 
