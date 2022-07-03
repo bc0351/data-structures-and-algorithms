@@ -25,3 +25,12 @@ To run your tests
   #### **Table of Contents**
 
   * [Code Challenge: Class 01](./javascript/array-reverse/README.md)
+## **Table of Contents**
+
+* [Code Challenge: Class 01](./code-challenges/array-reverse/README.md)
+* [Code Challenge: Class 02](./code-challenges/array-insert-shift/README.md)
+* [Code Challenge: Class 03](./code-challenges/array-binary-search/README.md)
+* [Code Challenge: Class 10](./code-challenges/code-401/challenge-10/README.md)
+* [Code Challenge: Class 11](./code-challenges/code-401/challenge-11/README.md)
+* [Code Challenge: Class 12](./code-challenges/code-401/challenge-12/README.md)
+* [Code Challenge: Class 13](./code-challenges/code-401/challenge-13/README.md)
