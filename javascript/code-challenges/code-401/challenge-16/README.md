@@ -1,9 +1,18 @@
+# Code Challenge: Class 16
+
+## Challenge
+
+Find the maximum value in a binary tree.
+
+
+## Solution
+
+```javascript
 'use strict';
 
 class Node {
   constructor(value) {
     this.value = value;
-    this.parent = null;
     this.left = null;
     this.right = null;
   }
@@ -14,45 +23,54 @@ class BinaryTree {
     this.root = null;
   }
 
-  preOrder() {
-    let results = [];
-    const traverse = (node) => {
-      results.push(node.value);
-      if (node.left) traverse(node.left);
-      if (node.right) traverse(node.right);
-    };
-    traverse(this.root);
-    return results;
-  }
+preOrder() {
+  let results = [];
+  const traverse = (node) => {
+    results.push(node.value);
+    if (node.left) traverse(node.left);
+    if (node.right) traverse(node.right);
+  };
+  traverse(this.root);
+  return results;
+}
 
-  inOrder() {
-    let results = [];
-    const traverse = (node) => {
-      if (node.left) traverse(node.left);
-      results.push(node.value);
-      if (node.right) traverse(node.right);
-    };
-    traverse(this.root);
-    return results;
+inOrder() {
+  let results = [];
+  const traverse = (node) => {
+    if (node.left) traverse(node.left);
+    results.push(node.value);
+    if (node.right) traverse(node.right);
+  };
+  traverse(this.root);
+  return results;
+}
+
+postOrder() {
+  let results = [];
+  const traverse = (node) => {
+    if (node.left) traverse(node.left);
+    if (node.right) traverse(node.right);
+    results.push(node.value);
+  };
+  traverse(this.root);
+  return results;
+}
+
+findMax() {
+  let values = this.postOrder();
+  let max = 0;
+  for (let i = 0; i < values.length; i++) {
+    if (values[i] > max) max = values[i];
   }
-  
-  postOrder() {
-    let results = [];
-    const traverse = (node) => {
-      if (node.left) traverse(node.left);
-      if (node.right) traverse(node.right);
-      results.push(node.value);
-    };
-    traverse(this.root);
-    return results;
-  }
+  return max;
+}
 }
 
 class BinarySearchTree extends BinaryTree {
   add(value) {
     if (!this.root || this.root === null) this.root = new Node(value);
     let currNode = this.root;
-    while(true) {
+    while (true) {
       if (value === currNode.value) return;
       if (value < currNode.value) {
         if (currNode.left === null) {
@@ -92,3 +110,8 @@ module.exports = {
   BinaryTree,
   BinarySearchTree
 }
+```
+
+## Testing
+
+![tests](./challenge-16-tests.png)
