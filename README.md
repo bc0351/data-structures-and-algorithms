@@ -36,3 +36,4 @@ To run your tests
 * [Code Challenge: Class 13](./code-challenges/code-401/challenge-13/README.md)
 * [Code Challenge: Class 15](./code-challenges/code-401/challenge-15/README.md)
 * [Code Challenge: Class 16](./code-challenges/code-401/challenge-16/README.md)
+* [Code Challenge: Class 18](./code-challenges/code-401/challenge-18/README.md)
