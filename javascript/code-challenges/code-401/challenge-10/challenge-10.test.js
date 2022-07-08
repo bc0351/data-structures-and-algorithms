@@ -218,3 +218,5 @@ describe('Queue.peek()', () => {
     expect(()=>{emptyQueue.peek()}).toThrow('Empty Queue!');
   });
 });
+
+module.exports = {Node, Stack, Queue};
