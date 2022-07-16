@@ -38,4 +38,5 @@ To run your tests
 * [Code Challenge: Class 13](./javascript/code-challenges/code-401/challenge-13/README.md)
 * [Code Challenge: Class 15](./javascript/code-challenges/code-401/challenge-15/README.md)
 * [Code Challenge: Class 16](./javascript/code-challenges/code-401/challenge-16/README.md)
+* [Code Challenge: Class 17](./javascript/code-challenges/code-401/challenge-17/README.md)
 * [Code Challenge: Class 18](./javascript/code-challenges/code-401/challenge-18/README.md)
